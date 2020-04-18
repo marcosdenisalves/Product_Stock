@@ -35,20 +35,20 @@ public class Program {
 			sc.nextLine();
 			if (answer == 'c') {
 				product.add(new Product(name, price));
-				
+
 			} else if (answer == 'u') {
 				System.out.print("Manufacture date (DD/MM/YYYY): ");
 				Date manufactureDate = sdf.parse(sc.nextLine());
 				product.add(new UsedProduct(name, price, manufactureDate));
-				
-			}else {
+
+			} else {
 				System.out.print("Customs fee: ");
 				double customsFee = sc.nextDouble();
 				product.add(new ImportedProduct(name, price, customsFee));
-				
+
 			}
 		}
-		
+
 		System.out.println();
 		System.out.println("PRICE TAGS:");
 		for (Product prod : product) {
@@ -56,7 +56,6 @@ public class Program {
 		}
 
 		sc.close();
-
 	}
 
 }

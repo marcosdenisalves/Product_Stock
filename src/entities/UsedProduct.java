@@ -17,8 +17,6 @@ public class UsedProduct extends Product {
 		this.manufactureDate = manufactureDate;
 	}
 
-
-
 	public Date getManufactureDate() {
 		return manufactureDate;
 	}
